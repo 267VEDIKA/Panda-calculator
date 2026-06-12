@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🐼 Ultimate Panda Math Adventure</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="celebration-container"></div>
+
+<div class="jungle-canopy-glow"></div>
+<div class="scenery-bamboo-bg left-bamboo"></div>
+<div class="scenery-bamboo-bg right-bamboo"></div>
+<div class="ground-grass-patch"></div>
+
+<div class="leaves-container"></div>
+<div class="fireflies-container"></div>
+
+<div class="baby-panda-playground">
+    <div class="baby-panda climbing-panda">🐼🐾<span class="speech-pop">Up we go!</span></div>
+    <div class="baby-panda running-panda">🐼🏃‍♂️</div>
+    <div class="baby-panda rolling-panda">🐼🌀</div>
+    <div class="baby-panda sliding-panda">🐼💨</div>
+    <div class="baby-panda peekaboo-left">👋🐼</div>
+    <div class="baby-panda peekaboo-right">🐼🌿</div>
+</div>
+
+<div class="overlay">
+    
+    <div class="calculator-wrapper">
+        
+        <div class="panda-ear left"></div>
+        <div class="panda-ear right"></div>
+
+        <div class="calculator">
+            <div class="panda-face-features">
+                <div class="panda-eye left-eye">
+                    <div class="pupil" id="pupilLeft"></div>
+                </div>
+                <div class="panda-eye right-eye">
+                    <div class="pupil" id="pupilRight"></div>
+                </div>
+                <div class="panda-snout">
+                    <div class="panda-nose"></div>
+                    <div class="panda-smile"></div>
+                </div>
+            </div>
+
+            <h1 class="brand-title">Panda Calc</h1>
+            <p id="message">🎋 Let's crunch some bamboo! 🎋</p>
+
+            <div class="display-container">
+                <input type="text" id="display" readonly placeholder="0">
+                <div class="expression-badge" id="expressionBadge">🐼</div>
+            </div>
+
+            <div class="buttons">
+                <button onclick="clearDisplay(this)" class="btn-clear">C</button>
+                <button onclick="appendValue('/',this)" class="btn-op">÷</button>
+                <button onclick="appendValue('*',this)" class="btn-op">×</button>
+                <button onclick="appendValue('-',this)" class="btn-op">−</button>
+
+                <button onclick="appendValue('7',this)">7</button>
+                <button onclick="appendValue('8',this)">8</button>
+                <button onclick="appendValue('9',this)">9</button>
+                <button onclick="appendValue('+',this)" class="btn-op">+</button>
+
+                <button onclick="appendValue('4',this)">4</button>
+                <button onclick="appendValue('5',this)">5</button>
+                <button onclick="appendValue('6',this)">6</button>
+                <button onclick="calculate(this)" class="btn-equal">=</button>
+
+                <button onclick="appendValue('1',this)">1</button>
+                <button onclick="appendValue('2',this)">2</button>
+                <button onclick="appendValue('3',this)">3</button>
+                <button onclick="appendValue('.',this)">.</button>
+
+                <button onclick="appendValue('0',this)" class="zero">0</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<audio id="clickSound" src="https://assets.mixkit.co/active_storage/sfx/2568/2568-84.wav"></audio>
+<script src="script.js"></script>
+</body>
+</html>
